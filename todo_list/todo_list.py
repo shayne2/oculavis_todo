@@ -13,16 +13,6 @@ def find_space(haystack: List[TodoTask]) -> int:
 class TodoList:
     def __init__(self) -> None:
         self.all_tasks = []
-        self.dummy_task = TodoTask(
-            id=0,
-            name='Buy Printen',
-            description='You need to buy Printen to send as a gift',
-            deadline=datetime.now(),
-            type=TaskType.CHORE,
-            reminders=[
-                Reminder(point_in_time=datetime.now(), type=ReminderType.CARRIER_PIDEON)
-            ]
-        )
 
     def lookup_task_by_id(self, id: int) -> TodoTask:
         if len(self.all_tasks) + 1 <= id and self.all_tasks[id]:

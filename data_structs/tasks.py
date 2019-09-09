@@ -10,6 +10,7 @@ class TaskType(Enum):
     AUSRAEUMEN = auto()
     MEETING = auto()
     CHORE = auto()
+    ERRAND = auto()
 
 
 class ReminderType(Enum):
