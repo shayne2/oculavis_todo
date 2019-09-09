@@ -1,0 +1,3 @@
+pytest
+sanic
+sanic_cors
